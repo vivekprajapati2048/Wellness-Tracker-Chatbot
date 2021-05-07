@@ -1,1 +1,2 @@
-# Wellness-Tracker-Chatbot
+# Wellness-Tracker-Chatbot  
+This project is based on concept of NLU (natural language understanding) and using ML to guide a bot's next actions in the conversation. This a rasa project, I added training data, and train the model using ML pipeline. I have build a bot that logs daily wellness data to a spreadsheet (using the Airtable API), to help the user keep track of their health goals. After building a basic assistant, I added a custom actions and forms. Then I connected the assistant to a messaging channel— Slack, so users can talk to the assistant.
