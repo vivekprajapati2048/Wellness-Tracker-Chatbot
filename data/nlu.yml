@@ -1,0 +1,197 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hello
+    - Hi
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - cool
+    - pretty good
+    - fine
+    - why not
+    - you bet
+    - more or less
+    - i sure did
+    - Sure
+    - Yes
+    - yes i did
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - absolutely not
+    - no thanks
+    - not I didn't
+    - could have been better
+    - nope
+    - not great
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: ask_lower_stress
+  examples: |
+    - what I do if I'm too stressed?
+    - how can I lower my stress level?
+    - what are some good ways to lower stress?
+    - what are good ways to relax?
+    - what are some things I can do to lower my stress?
+- intent: ask_eat_healthy
+  examples: |
+    - what's considered a helthy diet?
+    - what's considered a good diet?
+    - how do I follow a healthy diet?
+    - what's an example of a healthy diet?
+    - how do I eat healthy?
+    - How do I stay healthy?
+- intent: ask_exercise
+  examples: |
+    - what's a good amount of exercies for someone in their thirties?
+    - how much exercise should I be getting?
+    - how much exercise is recommended?
+    - is walking once a day enough exercise?
+    - how much exercise should I do every day?
+    - how many times per week should I go to the gym?
+- intent: inform
+  examples: |
+    - a full [8 hours](sleep)
+    - only [four hours](sleep)
+    - about [6 hour](sleep)
+    - [low](stress)
+    - [medium](stress)
+    - [high](stress)
+    - i went for a [run](exercise)
+    - yes, I went for a [ran](exercise)
+    - uh huh an hour of [yoga](exercise)
+    - yep, I went for a [hike](exercise)
+    - yes, I tool the dog for a [walk](exercise)
+    - yeah, I played [tennis](exercise)
+    - I went [swimming](exercise)
+    - took a [spin class](exercise)
+    - did some [boxing](exercise)
+    - played some [basketball](exercise)
+    - played [football](exercise)
+    - I did a [workout](exercise)
+    - [rock climbing](exercise)
+    - I want to get up early and go for a run
+    - be more patient with my family
+    - try to be a better friend
+    - make sure to eat better tomorrow
+    - eat less junk food
+    - eat better
+    - spend less time on my phone
+    - don't procrastinate
+    - go to bed earlier
+    - don't stay up so late
+    - try to make some time to meditate
+    - I ate pretty healthy overall
+    - lots of fruits and vegetables
+    - I ate a salad
+    - too many snacks
+    - too many sweets
+    - a lot of carbs
+    - too much fatty food
+    - get more exercise
+    - i slept for [10 hours](sleep)
+    - very [low](stress)
+    - i want to maintain [fit body](goals)
+    - i want to start [eating health diet](goals)
+- intent: out_of_scope
+  examples: |
+    - that's not what i want to do
+    - wait stop
+    - you are no help
+    - this is no help at all
+    - how old are you
+    - I want to order a pizza
+    - tell me the weather
+    - this isn't working
+    - I already told you that
+    - don't like that
+    - none of your business
+    - I don't want to tell you that
+    - that's not right
+    - stop asking
+    - nevermind
+    - I want to do something else
+    - I changed my mind
+- intent: thankyou
+  examples: |
+    - okay great thanks
+    - thank you
+    - sure thanks
+    - thank bye
+    - thanks
