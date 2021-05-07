@@ -1,0 +1,84 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: survey happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: health_form
+  - active_loop: health_form
+
+- story: survey stop
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: health_form
+  - active_loop: health_form
+  - intent: out_of_scope
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_deactivate_loop
+  - active_loop : null
+  - action: utter_goodbye
+
+
+- story: no survey
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ask diet questions
+  steps:
+  - intent: ask_eat_healthy
+  - action: utter_diet_info
+
+- story: ask stress questions
+  steps:
+  - intent: ask_lower_stress
+  - action: utter_stress_info
+
+- story: survey continue
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: health_form
+  - active_loop: health_form
+  - intent: out_of_scope
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: health_form
+
+  
